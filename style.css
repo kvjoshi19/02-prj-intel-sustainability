@@ -64,19 +64,54 @@ body {
 .milestone h2 {
   top: 10px;
   font-size: 1.5rem;
+  padding: 6px 10px;
+  background-color: #0a4fb3;
+  opacity: 0.95;
 }
 .milestone h3 {
   top: 50px;
   font-size: 1rem;
+  padding: 6px 10px;
+  background-color: #0a4fb3;
+  opacity: 0.95;
 }
 .milestone p {
-  bottom: 0;
+  top: 10px;
   display: none;
   font-size: 0.9rem;
+  font-weight: 600px;
+  line-height: 1.6;
+}
+.milestone img {
+  transition: opacity 0.3s ease;
+}
+.milestone:hover img {
+  opacity: 0.15;
 }
 .milestone:hover {
   background-color: #0a4fb3;
 }
 .milestone:hover p {
   display: block;
+}
+.milestone:hover h2,
+.milestone:hover h3 {
+  display: none;
+}
+.instructions {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .timeline-track {
+    flex-direction: column;
+  }
+  .milestone {
+    width: 100%;
+  }
+  .milestone p {
+    font-size: 1.1rem;
+  }
 }
